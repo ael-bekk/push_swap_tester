@@ -220,7 +220,7 @@ do
 	mv gen.txt tests/gen_100/gen_100_$j.txt
 	res=$(./$1 `cat tests/gen_100/gen_100_$j.txt` | ./$2 `cat tests/gen_100/gen_100_$j.txt`)
 	count=($(./$1 `cat tests/gen_100/gen_100_$j.txt` | wc -l))
-	echo -en "${yell}checher${green}${res} : ${reset}"
+	echo -en "${yell}checher${green} ${res} : ${reset}"
 	test_100 "$count" 100
 	echo -e "${reset} Instruction."
 	avr=$(($avr + $count))
