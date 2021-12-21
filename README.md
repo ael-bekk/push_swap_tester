@@ -10,7 +10,7 @@ and tester check that your checker works correctly.
 ## What's push_swap_tester?
 
 Push_swap_tester is a little tester that shows you how your push_swap works.
-It displays the number of instructions performed by your push_swap in color, with the everage
+It displays the number of instructions performed by your push_swap in color, with the average
 here is the colors means:
 
 
