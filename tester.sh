@@ -126,7 +126,7 @@ check () {
 
 rm -rf tests
 mkdir -p tests
-echo -e "\n${green}<____________________________________Tester___________________________________>${reset}"
+echo -e "\n${green}<____________________________________Tester by ael-bekk___________________________________>${reset}"
 
 echo -e "\n${white}Manage error${red} push_swap :${reset}"
 echo -en "less than INT_MIN : "
