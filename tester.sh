@@ -162,7 +162,7 @@ mkdir -p tests/gen_2
 avr=0
 for ((j = 0 ; j < times ; j++ ))
 do
-	./generat.sh 0 100 2
+	./generate.sh 0 100 2
 	mv gen.txt tests/gen_2/gen_2_$j.txt
 	res=$(./$1 `cat tests/gen_2/gen_2_$j.txt` | ./$2 `cat tests/gen_2/gen_2_$j.txt`)
 	count=($(./$1 `cat tests/gen_2/gen_2_$j.txt` | wc -l))
@@ -180,7 +180,7 @@ echo -e "\n${white}Random of ${red}3 ${white}Numbers :${reset}"
 mkdir -p tests/gen_3
 for ((j = 0 ; j < times ; j++ ))
 do
-	./generat.sh 0 100 3
+	./generate.sh 0 100 3
 	mv gen.txt tests/gen_3/gen_3_$j.txt
 	res=$(./$1 `cat tests/gen_3/gen_3_$j.txt` | ./$2 `cat tests/gen_3/gen_3_$j.txt`)
 	count=($(./$1 `cat tests/gen_3/gen_3_$j.txt` | wc -l))
@@ -198,7 +198,7 @@ echo -e "\n${white}Random of ${red}5 ${white}Numbers :${reset}"
 mkdir -p tests/gen_5
 for ((j = 0 ; j < times ; j++ ))
 do
-	./generat.sh  0 100 5
+	./generate.sh  0 100 5
 	mv gen.txt tests/gen_5/gen_5_$j.txt
 	res=$(./$1 `cat tests/gen_5/gen_5_$j.txt` | ./$2 `cat tests/gen_5/gen_5_$j.txt`)
 	count=($(./$1 `cat tests/gen_5/gen_5_$j.txt` | wc -l))
@@ -216,7 +216,7 @@ echo -e "\n${white}Random of ${red}100 ${white}Numbers :${reset}"
 mkdir -p tests/gen_100
 for ((j = 0 ; j < times ; j++ ))
 do
-	./generat.sh  0 500000 100
+	./generate.sh  0 500000 100
 	mv gen.txt tests/gen_100/gen_100_$j.txt
 	res=$(./$1 `cat tests/gen_100/gen_100_$j.txt` | ./$2 `cat tests/gen_100/gen_100_$j.txt`)
 	count=($(./$1 `cat tests/gen_100/gen_100_$j.txt` | wc -l))
@@ -234,7 +234,7 @@ echo -e "\n${white}Random of ${red}500 ${white}Numbers :${reset}"
 mkdir -p tests/gen_500
 for ((j = 0 ; j < times ; j++ ))
 do
-	./generat.sh 0 70000000 500
+	./generate.sh 0 70000000 500
 	mv gen.txt tests/gen_500/gen_500_$j.txt
 	res=$(./$1 `cat tests/gen_500/gen_500_$j.txt` | ./$2 `cat tests/gen_500/gen_500_$j.txt`)
 	count=($(./$1 `cat tests/gen_500/gen_500_$j.txt` | wc -l))
