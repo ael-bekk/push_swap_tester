@@ -26,7 +26,7 @@ here is the colors means:
 ## How to run this tester?
 
 ```bash
-git clone 
+git clone https://github.com/ael-bekk/push_swap_tester.git
 cd push_swap_tester/
 ./tester.sh [path/push_swap] [path/checker (your checker or checker_mac)] [nb_of_tests]
 ```
