@@ -3,7 +3,7 @@ push swap tester for 42 push_swap project
 
 This tester shows the performance of your push_swap program
 
-and tester check that your checker works correctly.
+and check that your checker works correctly.
 
 * [How to run this tester?](#how-to-run-this-tester)
 
