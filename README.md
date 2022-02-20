@@ -40,3 +40,9 @@ the following command will perform 5 tests with a stack of 2 & 3 & 5 & 100 & 500
 ```bash
 ./tester.sh ../push_swap ../checker 5
 ```
+
+## 📝 License
+
+This project is licensed under the MIT - see the [LICENSE](LICENSE) file for details.
+
+---
