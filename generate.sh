@@ -17,7 +17,7 @@ count=$(($2 - $1))
 
 if [ $3 -lt $count ]
 then
-	let "count=$3"
+	let "count = $3"
 fi
 
 rm -fr gen.txt
